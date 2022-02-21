@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="reportstyle.css">
+<meta name="viewport" content="width=device-width", initial-scale=1.0">
+</head>
+
+<!--div element for all other elements on the page-->
+<div class="wrapper">
+<!--header div tag-->
+
+	<div class="header">
+	<span class="lg-view"><a href="index.html" style="text-decoration:none; color:black;">PcMegaStore</a></span>
+	<span class="sm-view"><a href="index.html" style="text-decoration:none; color:black;">PC</a></span>	<!--Store logo-->
+		<div class="iconcon">
+		<a href="cart.php"><img id="icon" src="Images/cart.png" alt="ShoppingCart"><!--basket icon-->
+		<a href="cart.php" style="text-decoration:none; color:black;">CART</a><!--basket icon-->
+		</div>
+		
+		<div class="iconcon">
+		<a href="registration.html"><img id="icon" src="Images/user.png" alt="ShoppingCart"></a>
+		<a href="registration.html" style="text-decoration:none; color:black;">SIGN IN</a><!--sign in icon-->
+		</div>
+	</div>
+<!--middle,content div tag with img and details of a product-->
+	<div class="navtop">
+		<ul class="topnav">		<!--nav bar-->
+		<li><a href="index.php">Home</a></li>
+		<li><a href="products.php">products</a></li>
+		<li><a href="slideshow.html">Gallery</a></li>
+		<li><a class="active"  href="report.html">Report</a></li>
+		</ul>
+	</div>
+
+	<div class="col">
+	<h1>Report</h1>
+	<p>Assignment for this term was to continue development of the e-commerce site from Term 1. General requirements were to create a back-end part of the site including connection to database, retrieving data from database and allowing user interaction with that same database.</p>
+	<p>After establishing connection with the created database, next step was to implement it within the site. To satisfy the main purpose of an e-commerce site, which is to sell products, it is needed to present all the products in a simple and organized manner. In order to tackle that problem, I created a &quot;Master list&quot; which contains information and images about each product. When users select a desired product, they are automatically redirected to a page with details about the product of their choosing, along with an option to add it to their basket. The basket is accessible at every moment in the top right corner of every page. If a user decides to add a product in their basket, the information about that user and the product they selected is sent to a different table in the database that stores users selection. </p>
+	<p>The registration process is straightforward and simple in design, which is optimal for an e-commerce site. The user must enter their personal data, address, username and password in order to register. The registration data is then sent to &quot;userstable&quot; in the database. Users that already have an account need to enter their username and password in order to login. Login credentials are checked against the data in &quot;userstable&quot; in order to determine the right of access. Users can view and/ or change their details on the user site. This can easily be accessed by clicking on the icon in top right corner of the site. The administrators have different access level then ordinary users and can change user data or name, price and description of products. Users are naturally restricted from accessing the administrator page.</p>
+	<p>The issues that I encountered during the development of this website were mostly connected with SQL commands for updating or retrieving data from the database, especially the shopping basket. Main functionality is achieved with users being able to add items in the shopping basket and deleting them. The login and registration are both fully functional. The data from registration and login process is secured by using SQL prepared statements for preventing SQL injections.</p>
+	<p>Had I not experienced problems with the database or if I had more time I would add a few more features to the site, such as order history. It would be a table of previously purchased items with ID numbers next to it. This would be very beneficial to users.</p>
+	<p>References<br>
+		Vyas, P. 2020. Authentication & Sessions SOFT20171.Internet Application Development. 28.1.2020, Nottingham Trent University<br>
+Vyas, P. 2020. Connect & Display SOFT20171.Internet Application Development. 28.1.2020, Nottingham Trent University<br>
+Vyas, P. 2020. Delete, Update, Colour SOFT20171.Internet Application Development. 28.1.2020, Nottingham Trent University
+
+</p>
+	</div>
+
+<!--footer div tag with copyright and additional info-->
+	<div class="footer">
+	<div style="float;right">Designed by Hrvoje Tomic (N0825071)<br>January 2020 &copy;</div><center><a href="index.html" style="text-decoration:none; color:black;">Home<a></center>
+	
+	</div>
+</div>
+</body>
+</html>

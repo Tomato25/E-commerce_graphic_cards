@@ -1,0 +1,336 @@
+body{
+	background-color:white;
+}
+
+@font-face {
+  font-family: Navfont;
+  src: url("fonts/awake-regular-webfont.woff") format("woff");
+}
+
+@font-face {
+  font-family: Logofont;
+  src: url("fonts/metro-uber-font.woff") format("woff");
+}
+
+.header{
+	background-color:white;
+	color:black;
+	font-family:Logofont;
+	text-align:left;
+	font-size:4em;
+	letter-spacing:5px;
+	width:100%;
+	height:80px;
+	padding:10px;
+	border-bottom:black 3px solid;
+	box-sizing: border-box;
+	}
+
+
+.content{
+	width:100%;
+	float:left;
+}
+
+form {
+	width:100%;
+	margin:0 auto;
+}
+
+select {
+	border:2px solid black;
+	font-family:Navfont;
+	border-radius:4px;
+	padding:10px
+}
+
+fieldset {
+	border:2px solid black;
+	font-family:Navfont;
+	border-radius:4px;
+	padding:10px;
+	box-shadow: 10px 10px 5px lightgrey;
+
+}
+
+label {
+	color:black;
+	font-family:Navfont;
+	text-align:left;
+	font-size:20px;
+	margin:0;
+}
+
+input[type=text] {
+    border:2px solid black;
+	border-radius:4px;
+    margin:0;
+    padding:10px;
+    width:90%;
+}  
+
+input[type=email] {
+	border:2px solid black;
+	border-radius:4px;
+    margin:0;
+    padding:10px;
+    width:90%;
+}
+
+
+input[type=submit] {
+    border:2px solid black;
+	font-family:Navfont;
+	border-radius:4px;
+    margin:20px auto;
+    padding:10px;
+	background-color:white;
+	width:100%;
+	cursor:pointer;
+	box-shadow: 10px 10px 5px lightgrey;
+}
+
+input[type=submit]:hover {
+	background-color:black;
+	color:white;	
+}
+
+
+.col{
+	width:100%;
+	float:left;
+	background:white;
+	border-bottom:black 3px solid;
+	margin-top:5px;
+	margin-bottom:40px;
+	padding:10px;
+	box-sizing: border-box;
+}
+
+.basket {
+	width:100%;
+	border:2px solid black;
+	font-family:Navfont;
+	border-radius:4px;
+	padding:10px;
+	box-shadow: 10px 10px 5px lightgrey;
+	
+	
+}
+
+#icon{
+	max-width:35px;
+	height:auto;
+	box-sizing:border-box;
+	position:relative;
+	cursor:pointer;
+}
+
+.iconcon{
+	float:right;
+	font-family:Navfont;
+	text-align:center;
+	font-size:12px;
+	letter-spacing:2px;
+	color:black;
+	width:60px;
+	transition: transform .4s;
+}
+
+.iconcon:hover {
+	transform:scale(1.3);
+}
+
+
+	
+.footer{
+	background-color:white;
+	color:black;
+	clear:both;
+	width:100%;
+	height:80px;
+	margin-top:40px;
+	box-sizing: border-box;
+	box-shadow: 10px 10px 5px lightgrey;
+	text-align:right;
+	padding:10px;
+}
+
+.wrapper{
+	width:80%;
+	margin:0 auto;
+}
+
+.navtop {
+	width:100%;
+	float:left;	
+	border-bottom:black 1px solid;
+	box-shadow: 10px 10px 5px lightgrey;
+	margin-bottom:12px;
+	position:sticky;
+	top:0;
+	z-index: 1;
+	}
+	
+ul.topnav  {
+	overflow:hidden;
+	background-color:white;
+	list-style-type:none;
+	margin:0;
+	padding:0;
+}
+ul.topnav li {
+	float:left;
+	width:25%;
+}
+
+ul.topnav li a {
+	display:block;
+	color:black;
+	text-align:center;
+	padding:15px 15px;
+	text-decoration:none;
+	font-family:Navfont;
+	text-transform: uppercase;
+}
+
+ul.topnav li a:hover:not(.active){
+	background-color:black;
+	color:white;
+}
+
+ul.topnav li a.active {
+	background-color:black;
+	color:white;
+}
+
+.lg-view{
+	display:inline-block;
+}
+
+.sm-view{
+   display:none;
+}
+
+.img1 {
+	float:left;
+	width:50%;
+	position:relative;
+}
+
+.img2 {
+	float:right;
+	width:50%;
+	position:relative;
+}
+
+.btn {
+	position:absolute;
+	bottom: 0px;
+	left: 0px;
+	background-color:black;
+	color:white;
+	font-family:Navfont;
+	font-size:14px;
+	padding:15px;
+	text-align:left;
+	cursor:pointer;
+	transition:width 1s ease-in-out;
+	border:white solid 3px;
+	text-transform: uppercase;
+	transition-duration:4s;
+}
+
+.btn:hover{
+	width:100%;	
+}
+@media screen and (max-width: 600px) {
+
+	
+	form {
+	width:90%;
+	margin:0 auto;
+}
+
+	
+	fieldset {
+	width:100%;
+	margin:auto;
+	display:inline-block;
+	}
+	
+	.col1 {
+	width:100%;
+	margin:auto;
+	float:none;
+}
+
+	.col2 {
+	width:100%;
+	float:left;
+}
+	
+	.basket {
+		width:90%;
+	}
+	
+	.img1 {
+		width:100%;
+		float:left;
+		margin-bottom:5px;
+	}
+	
+	.img2 {
+		width:100%;
+		float:left;
+	}
+	
+	ul.topnav  {
+	overflow:none;
+	}
+	
+	ul.topnav li {
+		float:left;
+		width:100%;
+	}
+	
+	ul.topnav li a {
+		font-size:14px;
+		padding:10px;	
+	}
+	
+	.navtop {
+		width:100%;
+		position: sticky;
+		top: 0;
+		left: 0;
+	}
+	.wrapper{
+		width:100%;
+	}
+	
+	.header {
+		width:100%;
+		float:left;
+	}
+	
+	.footer{
+		width:100%;
+		float:left;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	
+	.lg-view{
+       display:none;
+    }
+
+    .sm-view{
+       display:inline-block;
+	   font-size:50px;
+    }
+	
+	.wrapper {
+		width:100%;
+	}

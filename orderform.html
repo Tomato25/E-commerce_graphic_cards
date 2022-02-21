@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="orderformstyle.css">
+<meta name="viewport" content="width=device-width", initial-scale=1.0">
+
+</head>
+
+<body>
+<!--div element for all other elements on the page-->
+<div class="wrapper">
+<!--header div tag-->
+
+	<div class="header">
+	<span class="lg-view"><a href="index.html" style="text-decoration:none; color:black;">PcMegaStore</a></span>
+	<span class="sm-view"><a href="index.html" style="text-decoration:none; color:black;">PC</a></span>	<!--Store logo-->
+		<div class="iconcon">
+		<a href="orderform.html"><img id="icon" src="Images/cart.png" alt="ShoppingCart"><!--basket icon-->
+		<a href="orderform.html" style="text-decoration:none; color:black;">CART</a><!--basket icon-->
+		</div>
+		
+		<div class="iconcon">
+		<a href="registration.html"><img id="icon" src="Images/user.png" alt="ShoppingCart"></a>
+		<a href="registration.html" style="text-decoration:none; color:black;">SIGN IN</a><!--sign in icon-->
+		</div>
+	</div>
+<!--middle,content div tag with img and details of a product-->
+	<div class="navtop">
+		<ul class="topnav">		<!--nav bar-->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="products.html">products</a></li>
+		<li><a href="slideshow.html">Gallery</a></li>
+		<li><a href="report.html" >Report</a></li>
+		</ul>
+	</div>
+
+	<div class="col">
+	<h1>Cart</h1>
+	<div class="basket">
+	
+	</div>
+	<h1>Payment Details</h1>
+	<form action="/action_page.php">
+	<fieldset class="col1">
+		<legend>Billing address:</legend>
+		<label>First Name:*</label><br>
+		<input type="text" name="fname" placeholder="John" maxlength="15" autofocus required><br><br>
+		<label>Last Name:*</label><br>
+		<input type="text" name="lname" placeholder="Doe" maxlength="15" required><br><br>	<!--Name input-->
+		<label>Email:*</label><br>	<!--Last name input-->
+		<input type="email" name="email" placeholder="sample@mail.com" maxlength="20" required></br><br><!--Email input-->
+		<label >City*</label><br>
+		<input type="text" name="City:"maxlength="20" required><br><br>
+		<label >Address:*</label><br>
+		<input type="text" name="Adress:"maxlength="20" required><br><br><!--Adress-->
+		<label>Postcode:*</label> <br>
+		<input type="text" name="Postcode:" required><br><br><!--Postcode-->
+	</fieldset> <br><br>
+	<fieldset class="col2">
+		<legend>Payment:</legend>
+		<label>Name on the card:*</label><br>
+		<input type="text" name="name" placeholder="John Doe" maxlength="25" required><br><br>
+		<label>Card number:*</label><br>
+		<input type="text" name="cardnum" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="19" required><br><br>
+		<label>Expiry month:*</label><br>
+		<select name="month" required>
+		<option value="1">1</option>
+		<option value="2">2</option>
+		<option value="3">3</option>
+		<option value="4">4</option>
+		<option value="5">5</option>
+		<option value="6">6</option>
+		<option value="7">7</option>
+		<option value="8">8</option>
+		<option value="9">9</option>
+		<option value="10">10</option>	
+		<option value="11">11</option>
+		<option value="12">12</option></select><br><br>
+		<label name="year">Expiry year:*</label><br>
+		<select name="year" required>
+		<option value="2020">2020</option>
+		<option value="2021">2021</option>
+		<option value="2022">2022</option>
+		<option value="2023">2023</option>
+		<option value="2024">2024</option>
+		<option value="2025">2025</option>
+		<option value="2026">2026</option>
+		<option value="2027">2027</option>
+		<option value="2028">2028</option>
+		<option value="2029">2029</option>
+		<option value="2030">2030</option>	
+		<option value="2031">2031</option>
+		<option value="2032">2032</option></select><br><br>
+		<label>CVV*</label><br>
+		<input type="text" name="cvv" placeholder="123" maxlength="3" required>
+	</fieldset><br><br>
+	<!--Captcha verification-->
+	<input type="submit" value="Submit"><br><!--Submit button-->
+	</form>
+	</div>
+
+<!--footer div tag with copyright and additional info-->
+	<div class="footer">
+
+	<div style="float;right">Designed by Hrvoje Tomic (N0825071)<br>January 2020 &copy;</div><center><a href="index.html" style="text-decoration:none; color:black;">Home<a></center>
+
+
+	</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="slideshowstyle.css">
+<meta name="viewport" content="width=device-width", initial-scale=1.0">
+<script type="text/javascript" src="slideshowJS.js"></script>
+</head>
+
+<body>
+<!--div element for all other elements on the page-->
+<div class="wrapper">
+<!--header div tag-->
+
+	<div class="header">
+	<span class="lg-view"><a href="index.html" style="text-decoration:none; color:black;">PcMegaStore</a></span>
+	<span class="sm-view"><a href="index.html" style="text-decoration:none; color:black;">PC</a></span>	<!--Store logo-->
+		<div class="iconcon">
+		<a href="registration.html"><img id="icon" src="Images/cart.png" alt="ShoppingCart"><!--basket icon-->
+		<a href="registration.html" style="text-decoration:none; color:black;">CART</a><!--basket icon-->
+		</div>
+		
+		<div class="iconcon">
+		<a href="registration.html"><img id="icon" src="Images/user.png" alt="ShoppingCart"></a>
+		<a href="registration.html" style="text-decoration:none; color:black;">SIGN IN</a><!--sign in icon-->
+		</div>
+	</div>
+<!--middle,content div tag with img and details of a product-->
+	<div class="navtop">
+		<ul class="topnav">		<!--nav bar-->
+		<li><a href="index.html">Home</a></li>
+		<li><a href="products.html">products</a></li>
+		<li><a class="active" href="#">Gallery</a></li>
+		<li><a href="report.html" >Report</a></li>
+		</ul>
+	</div>
+	<div class="col">
+		
+	<!-- Container for the image gallery -->
+		<div class="container">
+		   <!-- Image text -->
+		  <div class="caption-container">
+			<p id="caption"></p>
+		  </div>
+
+		  <!-- Thumbnail images -->
+		 
+		  <div class="mySlides">
+			<div class="numbertext">1 / 6</div>
+			  <img src="Images/img_1.jpg" style="width:100%;"  >
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">2 / 6</div>
+			  <img src="Images/img_2.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">3 / 6</div>
+			  <img src="Images/img_3.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">4 / 6</div>
+			  <img src="Images/img_4.jpg" style="width:100%">
+		  </div>
+
+		  <div class="mySlides">
+			<div class="numbertext">5 / 6</div>
+			  <img src="Images/img_5.jpg" style="width:100%">
+		  </div>
+		  
+		  <div class="mySlides">
+			<div class="numbertext">6 / 6</div>
+			  <img src="Images/img_6.jpg" style="width:100%">
+		  </div>
+		  <!-- Next and previous buttons -->
+		  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+		  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+		 
+		  </div>
+		  
+		  <div class="thumbContainer">
+		 <div class="row">
+			<div class="column">
+			  <img class="demo active cursor" src="Images/img_1.jpg" style="width:100%" onclick="currentSlide(1)" alt="MSI RTX 2070 SUPER VENTUS">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="Images/img_2.jpg" style="width:100%" onclick="currentSlide(2)" alt="MSI GTX1650 XS">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="Images/img_3.jpg" style="width:100%" onclick="currentSlide(3)" alt="ASUS GeForce NVIDIA ROG STRIX RTX2060">
+			</div>
+		</div>	
+			<div class="row">
+			<div class="column">
+			  <img class="demo cursor" src="Images/img_4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Gigabyte GeForce 1050">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="Images/img_5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Gigabyte Geforce GeForce GTX1070">
+			</div>
+			<div class="column">
+			  <img class="demo cursor" src="Images/img_6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Gigabyte AORUS GeForce RTX 2060">
+			</div>			
+		  </div>
+		</div>
+		  
+		</div>
+	<div class="footer">
+	<div style="float;right">Designed by Hrvoje Tomic (N0825071)<br>January 2020 &copy;</div><center><a href="index.html" style="text-decoration:none; color:black;">Home<a></center>
+	
+	</div>
+</div>
+</body>
+</html>
